@@ -2,3 +2,7 @@
 
 __pycache__/
 *.pyc
+
+#ignore these files and folders
+day1.py
+practice/
