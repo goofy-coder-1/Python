@@ -43,17 +43,43 @@ players = {
        }
 }
 
-operation = input("Enter player's name: ")
+print("Want all player data or for specific person")
+operation = input("Enter 'A' for All and 'S' for specific: ")
 
+match operation:
 
-# 1. Loop through the main dictionary
-for username, player_data in players.items():
-    print(f"\n=================== {username.upper()} PROFILE ===================")
-    
-    # 2. Loop through the inner profile dictionary
-    for stat_name, stat_value in player_data.items():
-        # Cleanly display the lootbox items if it encounters the tuple
-        if stat_name == "lootbox":
-            print(f"Lootbox Items: {', '.join(stat_value)}")
-        else:
-            print(f"{stat_name.replace('_', ' ').title()}: {stat_value}")
+   case 'A':
+
+      #  Loop through the main dictionary
+      for username, player_data in players.items():
+            print(f"\n=================== {username.upper()} PROFILE ===================")
+         
+            #  Loop through the inner profile dictionary
+            for stat_name, stat_value in player_data.items():
+            # Cleanly display the lootbox items if it encounters the tuple
+             if stat_name == "lootbox":
+                  print(f"Lootbox Items: {', '.join(stat_value)}")
+             else:
+                  print(f"{stat_name.replace('_', ' ').title()}: {stat_value}")
+   
+   case 'S':
+         
+      name = input("Enter name of the player: ")
+      found = False
+
+      #  Loop through the main dictionary
+      for username, player_data in players.items():
+         if name.lower() in player_data['name'].lower():
+            found = True
+            print(f"\n=================== {username.upper()} PROFILE ===================")
+         
+            #  Loop through the inner profile dictionary
+            for stat_name, stat_value in player_data.items():
+            # Cleanly display the lootbox items if it encounters the tuple
+             if stat_name == "lootbox":
+                  print(f"Lootbox Items: {', '.join(stat_value)}")
+             else:
+                  print(f"{stat_name.replace('_', ' ').title()}: {stat_value}")
+      # if the name of specific person is not found
+      if not found:
+         print("========= Player Not Found ==============")
