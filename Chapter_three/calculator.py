@@ -37,6 +37,6 @@ def main():
         case _:
             print("Error: Invalid operation")
 
-# This safely triggers our program to start executing
+
 if __name__ == "__main__":
     main()
