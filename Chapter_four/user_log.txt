@@ -1,0 +1,4 @@
+User: John Cena
+Status: Not seen
+User: Tony Adams
+Status: Seen
