@@ -1,0 +1,15 @@
+{
+    "username": "Michael Faraday",
+    "age": 19,
+    "location": "Europa",
+    "daily_activities": {
+        "gym": "2 hours",
+        "guitar": "15 minutes",
+        "git commits": 1
+    },
+    "completed_chapters": [
+        "Chapter_one",
+        "Chapter_two",
+        "Chapter_three"
+    ]
+}
