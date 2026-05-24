@@ -2,7 +2,7 @@
 #             A T M
 # =====================================
 
-from atmbox import atmBox
+from basicProjects.projectone.atmbox import atmBox
 
 realpassword = "567484"
 attempts = 3
