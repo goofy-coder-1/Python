@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "John Cena",
+        "course": "WWE",
+        "gpa": 3.44
+    },
+    {
+        "id": 2,
+        "name": "Roman",
+        "course": "Smack",
+        "gpa": 2.55
+    },
+    {
+        "id": 3,
+        "name": "Alexander",
+        "course": "conquerer",
+        "gpa": 3.99
+    }
+]
