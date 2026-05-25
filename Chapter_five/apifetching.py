@@ -42,7 +42,7 @@ city_catalog = {
 }
 
 while True:
-    print("\n====================================")
+    print("\n===================================")
     print("      LIVE METEO WEATHER ENGINE      ")
     print("=====================================")
     print("Available Cities:")
