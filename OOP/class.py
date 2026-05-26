@@ -30,7 +30,7 @@ class Character:
 # 2. Instantiating Objects (Creating instances from the blueprint)
 print("--- Creating Objects from the Class Blueprint ---")
 
-# We create two distinct objects using the same single template
+# create two distinct objects using the same single template
 player_one = Character("Zoro", "Swordsman", 100)
 player_two = Character("Luffy", "Captain", 45)
 
